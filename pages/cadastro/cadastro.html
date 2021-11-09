@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="/css/main.css">
+    <script type="text/javascript" src="script.js"></script>
+
+
+    
+</head>
+<html lang="pt-br ">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+        <div class="container-fluid">
+          <a class="navbar-brand js-scroll-trigger" href="../../index.html">
+            <h2></h2>
+           <img src="http://www.m2kindia.com/wp-content/uploads/2016/07/dummy-logo.png" >
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="../../index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+               <li class="nav-item dropdown  main-menu">
+                  <a class="nav-link dropdown-toggle" href="#" >Carros</a>
+                  <div class="dropdown-menu main-menubox" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Tunado</a>
+                    <a class="dropdown-item" href="#">Padrão</a>
+                  </div>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contato</a>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Login</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <body>
+        <div class="container">
+            <div class="row main">
+              <div class="panel-heading col-md-12">
+                <p class="text-center">Cadastre-se</p>
+              </div>
+              <div class="main-login main-center">
+                <form class="form-horizontal" method="post" action="#">
+          
+                  <div class="form-group">
+                    <label for="name" class="cols-sm-2 control-label">Nome Completo</label>
+                    <div class="cols-sm-10">
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                        <input type="text" class="form-control" name="name" id="name"  />
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="form-group">
+                    <label for="email" class="cols-sm-2 control-label">Email</label>
+                    <div class="cols-sm-10">
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                        <input type="text" class="form-control" name="email" id="email"  />
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="form-group">
+                    <label for="password" class="cols-sm-2 control-label">Senha</label>
+                    <div class="cols-sm-10">
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                        <input type="password" class="form-control" name="password" id="password"  />
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="form-group ">
+                    <button onclick="gravarFormularioCadastro()" type="button" class="btn btn-primary btn-lg btn-block login-button">Enviar</button>
+                  </div>
+                  <div class="login-register">
+                    <a onclick="location.href='../login/login.html'" >Login</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+    </body>
+
+    <!-- <script>
+        function gravarFormularioCadastro() {
+            // Variaveis que pegam o id de cada input
+            var nome = document.getElementById("name");
+            var email = document.getElementById("email");
+            var senha = document.getElementById("password");
+    
+            if (nome.value == "" || email.value == "" || senha.value == "") {
+                alert("Todos os campos devem ser preenchidos!");
+                print('Todos os campos devem ser preenchidos!');
+    
+                return;
+            } else {
+                alert("Os dados foram gravados com sucesso");
+                print('Os dados foram gravados com sucesso');
+                // envia o formulário
+            }
+        }
+    </script> -->
+
+</html>
+
+<style>
+    /*
+ * General styles
+ */
+
+body,
+html {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-color: #d3d3d3;
+}
+
+.main {
+  margin-top: 70px;
+}
+
+h1.title {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+hr {
+  width: 10%;
+  color: #fff;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  margin-bottom: 15px;
+}
+
+input,
+input::-webkit-input-placeholder {
+  font-size: 11px;
+  padding-top: 3px;
+}
+
+.main-login {
+  background-color: #fff;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.main-center {
+  margin-top: 30px;
+  margin: 0 auto;
+  max-width: 330px;
+  padding: 40px 40px;
+}
+
+.login-button {
+  margin-top: 5px;
+}
+
+.login-register {
+  font-size: 11px;
+  text-align: center;
+}
+</style>
