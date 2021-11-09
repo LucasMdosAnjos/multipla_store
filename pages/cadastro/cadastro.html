@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
     <link rel="stylesheet" href="/css/main.css">
+    <script type="text/javascript" src="script.js"></script>
+
 
     
 </head>
@@ -80,7 +82,7 @@
                   </div>
           
                   <div class="form-group ">
-                    <button type="button" class="btn btn-primary btn-lg btn-block login-button">Enviar</button>
+                    <button onclick="gravarFormularioCadastro()" type="button" class="btn btn-primary btn-lg btn-block login-button">Enviar</button>
                   </div>
                   <div class="login-register">
                     <a onclick="location.href='../login/login.html'" >Login</a>
@@ -91,7 +93,25 @@
           </div>
     </body>
 
-
+    <!-- <script>
+        function gravarFormularioCadastro() {
+            // Variaveis que pegam o id de cada input
+            var nome = document.getElementById("name");
+            var email = document.getElementById("email");
+            var senha = document.getElementById("password");
+    
+            if (nome.value == "" || email.value == "" || senha.value == "") {
+                alert("Todos os campos devem ser preenchidos!");
+                print('Todos os campos devem ser preenchidos!');
+    
+                return;
+            } else {
+                alert("Os dados foram gravados com sucesso");
+                print('Os dados foram gravados com sucesso');
+                // envia o formulário
+            }
+        }
+    </script> -->
 
 </html>
 
