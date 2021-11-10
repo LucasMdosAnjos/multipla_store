@@ -12,6 +12,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="./js/script.js"></script>
 </head>
 <header id="first">
   <video class="video-bg" autoplay muted loop>
@@ -74,36 +75,11 @@
      <p class="lead">
         Logo abaixo você encontra os modelos mais populares e vendidos do Multipla. Isso inclui versões padrão e modificadas.
      </p>
-     <div class="card-deck">
-         <!-- card -->
-         <div class="card">
-             <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG-DjaCK_mPD7fAgcOV9BkWfBb6wyfi2UTm7u8VOVrH0VSV-WPVq4Oh0aN6k3KN4LkAbY&usqp=CAU" alt="Card image cap">
-             <div class="card-body">
-                 <h4 class="card-title">Multipla preto-laranja</h4>
-                 <p class="card-text">Um dos motivos deste carro ser uma das versões mais vendidas do Multipla é o fato dele ter um nitro que fornece força e velocidade para rivalizar com
-                   carros atuais como uma Lamborghini. Garanja o seu agora!
-                 </p>
-             </div>
-         </div>
-         <!-- card -->
-         <div class="card">
-             <img class="card-img-top" src="https://i.pinimg.com/originals/1c/c4/9a/1cc49a5c554a680b4a597dd946c4b718.jpg" alt="Card image cap">
-             <div class="card-body">
-                 <h4 class="card-title">Multipla branco</h4>
-                 <p class="card-text">Este Multipla possui o diferencial de ser perfeito para passeios na praia e em uma ida ao parque. Por isso virou o queridinho da galera!</p>
-             </div>
-         </div>
-         <!-- card -->
-         <div class="card">
-             <img class="card-img-top" src="https://s1.cdn.autoevolution.com/images-webp/news/fugly-fiat-multipla-would-make-thomas-leave-165214-7.jpg.webp" alt="Card image cap">
-             <div class="card-body">
-                 <h4 class="card-title">Multipla versão Thomas</h4>
-                 <p class="card-text">Multipla inspirado no desenho Thomas e Seus Amigos com o diferencial de atrair crianças com facilidade quando passa na rua.</p>
-             </div>
-         </div>
+     <div class="card-deck" id="tresCarrosMaisVendidos">
+       <!--Carregado via JS-->
      </div>
-     <div></div>
-     <button type="button" class="btn btn-secondary mt-5">Mostrar mais opções</button>
+     <div class="card-deck mt-3" id="outrosCarrosVendidos"></div>
+     <button type="button" class="btn btn-secondary mt-5" id="mostrarMaisOuMenosOpcoes" onclick="mostrarMaisOuMenosOpcoes()"></button>
     <!-- </div> --> 
  </div>
 </section>
