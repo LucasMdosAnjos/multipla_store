@@ -59,6 +59,7 @@
         </li>
         <li class="nav-item">
           <button onclick="location.href='pages/login/login.html'" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Login</button>
+          <button onclick="location.href='pages/carrinho/carrinho.html'" type="button" class="btn btn-secondary ml-3" data-toggle="modal" data-target="#exampleModal">Carrinho</button>
         </li>
       </ul>
     </div>
@@ -72,17 +73,15 @@
 <body>
   <section id="one" class="wow fadeInUp">
     <div class="container" style="text-align: center;">
-     <h2>Carros mais vendidos</h2>
-     <p class="lead">
-        Logo abaixo você encontra os modelos mais populares e vendidos do Multipla. Isso inclui versões padrão e modificadas.
-     </p>
-     <div class="card-deck" id="tresCarrosMaisVendidos">
-       <!--Carregado via JS-->
-     </div>
-     <div class="card-deck mt-3" id="outrosCarrosVendidos"></div>
-     <button type="button" class="btn btn-secondary mt-5" id="mostrarMaisOuMenosOpcoes" onclick="mostrarMaisOuMenosOpcoes()"></button>
-    <!-- </div> --> 
- </div>
+      <h2>Carros mais vendidos</h2>
+      <p class="lead">
+          Logo abaixo você encontra os modelos mais populares e vendidos do Multipla. Isso inclui versões padrão e modificadas.
+      </p>
+      <div class="card-deck" id="tresCarrosMaisVendidos">
+        <!--Carregado via JS-->
+      </div>
+      <button  onclick="location.href='pages/mais_produtos/produtos.html'" type="button" class="btn btn-secondary mt-5" id="mostrarMaisOuMenosOpcoes"></button>
+    </div>
 </section>
 
 <section id="two" class="wow fadeInUp">

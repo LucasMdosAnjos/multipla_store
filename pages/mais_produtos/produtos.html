@@ -1,0 +1,53 @@
+
+<head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/img/">
+        <script type="text/javascript" src="produtos.js"></script>
+</head>
+<html>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="../../index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+               <li class="nav-item dropdown  main-menu">
+                  <a class="nav-link dropdown-toggle" href="#" >Carros</a>
+                  <div class="dropdown-menu main-menubox" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Tunado</a>
+                    <a class="dropdown-item" href="#">Padrão</a>
+                  </div>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contato</a>
+              </li>
+              <li class="nav-item">
+                <button onclick="location.href='../login/login.html'" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Login</button>
+                <button onclick="location.href='../carrinho/carrinho.html'" type="button" class="btn btn-secondary ml-3" data-toggle="modal" data-target="#exampleModal">Carrinho</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<body>
+    <section id="one" class="wow fadeInUp">
+    <p class="lead">
+        .
+    </p>
+        <div class="container">
+            <p class="lead mt-5">
+                Logo abaixo você encontra os modelos mais populares e vendidos do Multipla. Isso inclui versões padrão e modificadas.
+            </p>
+            <div id="todosOsCarros">
+                <!--Carregado via JS-->
+            </div>
+        </div>
+    </section>
+</body>
+</html>
