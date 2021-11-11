@@ -7,6 +7,8 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="img/">
+  <script type="text/javascript" src="script.js"></script>">
   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i" rel="stylesheet">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
@@ -35,8 +37,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
   <div class="container-fluid">
     <a class="navbar-brand js-scroll-trigger" href="index.html">
-      <h2></h2>
-     <img src="http://www.m2kindia.com/wp-content/uploads/2016/07/dummy-logo.png" >
+      <img src="img/logo.webp" height="70" alt="logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -92,6 +93,66 @@
   </div> 
 </section>
 
+<section id="three" class="three">
+  <div class="container mb-5">
+    <h2 class="h2 mb-5 text-center">Depoimentos</h2>
+    
+    <div class="row justify-content-center">
+      <div class="col-md-4 cards">
+        <div class="card text-center" style="padding: 50px;">
+          <div class="card-block">
+            <h4 class="card-title h5">Irineu Junior</h4>
+
+            <p class="card-text">Super indico está loja, donos são muito gente boa e confiáveis.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 cards">
+        <div class="card text-center" style="padding: 50px;">
+          <div class="card-block">
+            <h4 class="card-title h5">Mariazinha Rita</h4>
+
+            <p class="card-text">Excelentes carros, comprei o meu e estou adorando ele.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 cards">
+        <div class="card text-center" style="padding: 50px;">
+          <div class="card-block">
+            <h4 class="card-title h5">Cristiana Araujo</h4>
+
+            <p class="card-text">Loja top demais, me serviram café e comprei meu Multipla tunado.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <h2 class="h2 mb-5 text-center">Endereço e Contato</h2>
+    
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card text-center" style="padding: 50px;">
+          <div class="card-block">
+            <h4 class="card-title h5" style="color: blue;">Multipla Store</h4>
+
+            <p class="card-text">Rua revernevers together, 1234 - Cwb</p>
+            <p class="card-text">(41) 99999-9999</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 </body>
 
 
@@ -126,7 +187,7 @@
       ></a>
 
       <!-- Github -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+      <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/LucasMdosAnjos/multipla_store" role="button"
         ><i class="fab fa-github"></i
       ></a>
         </div>
@@ -137,14 +198,16 @@
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
     © 2021 Copyright:
-    <!-- <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com<a> -->
+    <a class="text-white"">Natan, Lucas e Henrique - PUCPR<a>
   </div>
   <!-- Copyright -->
 </footer>
 </html>
 
 <script>
-  $('#exampleModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})
+$(function(){
+    $(".cards").hover(function(){
+       $(this).toggleClass('carde cards');
+    });
+ });
 </script>
